@@ -1,0 +1,33 @@
+body {
+    min-height: 100vh;
+    background: -webkit-linear-gradient(65deg, rgb(238, 131, 10) 50%, rgb(3, 221, 250) 50%);
+}
+
+.letter-spacing {
+    letter-spacing: 4px;
+}
+
+.dBlock {
+    display: block;
+}
+
+.tc-black {
+    color: black;
+}
+
+.navbar-brand,
+.nav-link {
+    font-family: 'Mate SC', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form {
+    width: 30vw;
+}
+
+.fot {
+    z-index: -1;
+    position: sticky;
+    bottom: auto;
+}

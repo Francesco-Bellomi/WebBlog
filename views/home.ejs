@@ -1,0 +1,31 @@
+<%- include("partials/header") -%>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 text-center">
+                <h1 class="py-5">Home</h1>
+            </div>
+            <div class="col-12">
+                <p tc-black class="fs-4">
+                    <%= homeStart %>
+                </p>
+            </div>
+            <% newPosts.forEach((post)=>{  %>
+                <div class="col-10 my-5 card">
+                    <h3 class="text-center">
+                        <%= post.title %>
+                    </h3>
+                    <p class="fs-4 text-truncate ">
+                        <%= post.content %>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <p class="fs-4">
+                        <a href='<%= "/post/"+ post.title %>' class="btn btn-primary">Read More</a>
+                    </p>
+                </div>
+                <% }) %>
+        </div>
+    </div>
+
+    <%- include("partials/footer") -%>
